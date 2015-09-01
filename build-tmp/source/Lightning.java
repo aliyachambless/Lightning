@@ -35,16 +35,21 @@ public void draw()
 			startX[i] = endX[i];
 			startY[i] = endY[i];
 			if(endX[i]%2 == 0){
-				append(startX,startX[i]);
-				append(startY,startY[i]);
-				append(endX,endX[i]);
-				append(endY,endY[i]);
+				int[] startX = append(endX,endX[i]);
+				int[] startY = append(endY,endY[i]);
+				int[] endX = startX;
+				int[] endY = startY;
+				System.out.println(startX.length);
 			}
 		}
 	}
 }
 public void mousePressed()
 {
+	startX[0] = 0;
+	startY[0] = 150;
+	endX[0] = 0;
+	endY[0] = 150;
 
 }
 
