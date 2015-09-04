@@ -34,9 +34,7 @@ void draw()
 				startX.add(endX.get(i));
 				startY.add(endY.get(i));
 				endX.add(endX.get(i));
-				endY.add(endY.get(i));
-				System.out.println("if true" + i);
-			}
+				endY.add(endY.get(i));			}
 		}
 	}
 }
